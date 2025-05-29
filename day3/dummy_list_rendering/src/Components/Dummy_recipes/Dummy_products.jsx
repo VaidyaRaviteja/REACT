@@ -1,4 +1,5 @@
-import {recipes} from './Dummy_data.jsx'
+// import {recipes} from './Dummy_data.jsx'
+import {recipes} from "./Components/Dummy_recipes/Dummy_data.jsx";
 import './dummy_products.css'
 
 export const Dummy_products = () =>{
