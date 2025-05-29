@@ -1,11 +1,9 @@
-import react from "react";
-import {Dummy_products} from "./Components/Dummy_products/dummy_products.jsx";
+import {Dummy_products} from "./Components/Dummy_products/Dummy_data.jsx";
 
 export const App = ()=>{
   return(
     <div>
       <Dummy_products/>
-
     </div>
   )
 }
