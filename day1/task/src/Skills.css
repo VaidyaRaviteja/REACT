@@ -1,0 +1,19 @@
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 3rem;
+}
+#skillnames{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#skillnames img{
+    width: 120px;
+    transition: transform 0.3s;
+}
+#skillnames img:hover{
+    transform: scale(1.15);
+}

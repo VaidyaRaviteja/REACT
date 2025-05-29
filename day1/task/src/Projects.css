@@ -1,0 +1,17 @@
+#projects{
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#projects > div{
+    padding: 30px;
+    background-color: rgb(239, 237, 237);
+    border-radius: 10px;
+    
+}
+#projects a{
+    /* background-color: gray; */
+    text-decoration: none;
+}

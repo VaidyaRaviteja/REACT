@@ -1,0 +1,25 @@
+body{
+    overflow-x: hidden;
+    margin-top: 90px;
+
+}
+#about{
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+
+}
+#about > #pic > img{
+    width: 200px;
+    margin-left: 10rem;
+    border-radius: 50%;
+}
+#info{
+    width: 700px;
+}
+#info p{
+    /* padding: 10px; */
+    font-size: large;
+    margin-right: 10px;
+    line-height: 200%;
+}

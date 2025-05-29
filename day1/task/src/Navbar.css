@@ -1,0 +1,32 @@
+#navbar {
+    display: flex;
+    padding: 20px;
+    /* font-size: xx-large; */
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    
+}
+
+#navbar #name{
+    display: flex;
+    font-size: 30px;
+    align-items: center;
+}
+#navbar #options{
+    display: flex;
+    justify-items: center;
+    gap: 45px;
+}
+#navbar #options span:hover{
+    background-color: lightblue;
+    cursor: pointer;
+    border-radius: 1.5px;
+    transition: background 0.5s;   
+}
