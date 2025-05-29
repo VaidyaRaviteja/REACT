@@ -1,0 +1,43 @@
+#projects{
+    padding: 18px ; 
+}
+#cards > div >  img{
+    width: 100%;
+}
+#cards > div{
+    max-width: 280px;
+    width: 100%;
+}
+#cards{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+#cards > div > span{
+    position: relative;
+    bottom: 180px;
+    padding: 10px;
+    font-size: large;
+    color: white;
+    background-color: black;
+}
+@media (max-width:900px) {
+    #cards{
+        justify-items: center;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    #projects{
+        
+    }
+    #cards{
+
+        justify-items: center;
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+}

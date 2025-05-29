@@ -1,0 +1,47 @@
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    letter-spacing: 4px;
+    font-size: larger;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10000;
+    background-color: #fff;
+}
+#navbar > #one{
+    width: 100%;
+}
+#navbar > #one > p{
+    display: inline;
+    padding: 10px;
+}
+#navbar > #two{
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+#navbar > #one,#two > span{
+    padding: 10px;
+}
+#navbar > #one > p:hover ,#two > span:hover{
+    background-color: rgb(124, 126, 126);
+}
+
+@media (max-width:600px){
+    #navbar > #one{
+        width: 100%;
+        text-align: center;
+    }
+    #navbar > #two{
+    display: none;
+    }
+
+}
+@media (max-width:900px){
+    #navbar > #one{
+        width: 100%;
+    }
+}

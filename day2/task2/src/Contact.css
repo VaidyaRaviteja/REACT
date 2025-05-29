@@ -1,0 +1,50 @@
+#contact {
+    padding: 10px;
+}
+
+#contactform input,
+#contactform textarea {
+    width: 98%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #4e4d4d;
+}
+
+#contact span {
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    /* margin-top: 20px; */
+}
+
+#mapimg {
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#mapimg img {
+    width: 100%;
+    max-width: 400px;
+}
+
+@media (max-width:900px) {
+    #contact span {
+        padding: 5px;
+        font-size: 12PX;
+    }
+}
+
+@media (max-width:600px) {
+    #mapimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mapimg img{
+        max-width: 100%;
+    }
+}
