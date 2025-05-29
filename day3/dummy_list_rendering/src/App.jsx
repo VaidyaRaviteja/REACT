@@ -1,4 +1,4 @@
-import { Dummy_products } from "./Components/Dummy_recipes/dummy_products.jsx";
+import { Dummy_products } from "./Components/Dummy_recipes/Dummy_products.jsx";
 
 export const App = ()=>{
   return(
