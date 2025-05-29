@@ -1,0 +1,32 @@
+.dummy_compo {
+    padding: 10px;
+}
+.dummy_compo h1{
+    text-align: center;
+}
+.dummy_compo > .dummy_products{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+    gap: 10px;
+}
+.card{
+    box-shadow: 0.3px 0.7px 1.3px 0px black;
+    border-radius: 6px;
+
+}
+.card h3{
+text-align: center;
+}
+.card > img{
+    width: 100%;
+    border-radius: 6px;
+
+}
+.card > span{
+    display: block;
+    text-align: center;
+}
+.card > p{
+    text-align: center;
+}
