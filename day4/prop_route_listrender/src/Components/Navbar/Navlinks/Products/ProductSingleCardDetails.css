@@ -1,0 +1,25 @@
+#productsinglecard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    /* border-radius: ; */
+
+}
+#productsinglecardcontent{
+    display: flex;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+
+}
+
+#productsinglecardcontent img{
+    width: 30%;
+    height: auto;
+    
+}
+#productsinglecardinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-end; */
+}

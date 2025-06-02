@@ -1,0 +1,22 @@
+
+#singlecard {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#singlecardcontent{
+    width: 400px;
+    margin: 40px auto;
+    padding: 18px;
+    box-shadow: 0 12px 10px rgba(60,60,60,0.15);
+        
+}
+#singlecardcontent img{
+    width: 100%;
+    /* padding: 10px; */
+}
+#singlecardinfo{
+    text-align: start;
+    padding: 10px;
+}

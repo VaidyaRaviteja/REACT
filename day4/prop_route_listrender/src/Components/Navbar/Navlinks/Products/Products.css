@@ -1,0 +1,33 @@
+#products{
+    text-align: center;
+}
+#productinfo{
+    padding: 10px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+}
+#productcard{
+    box-shadow: 0 0 3px black;
+    border-radius: 5px;
+}
+#productcard p,#productcard img{
+    width: 100%;
+}
+/* #productcard > p > span{
+    background-color: blueviolet;
+    padding: 10px;
+    font-size: large;
+} */
+ #products{
+    /* padding: 10px; */
+ }
+#productcard span{
+
+    display: block;
+    padding: 10px;
+    background-color: blueviolet;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+}

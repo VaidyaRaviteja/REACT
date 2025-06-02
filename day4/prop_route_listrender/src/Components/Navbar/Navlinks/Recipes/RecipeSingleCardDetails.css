@@ -1,0 +1,42 @@
+#singlecard{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#singlecard #singlecardcontent{
+    width: 900px;
+    box-shadow: 0 8px 32px rgba(60,60,60,0.15);
+    border-radius: 24px;
+    background-color: #fff;
+    display: flex;
+    gap: 1rem;
+    /* align-items: center; */
+    transition: box-shadow 0.2s;
+}
+#singlecard #singlecardcontent:hover{
+    box-shadow: 0 12px 40px rgba(60,60,60,0.22);
+}
+#singlecard #singlecardcontent img{
+    padding: 1px;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(60,60,60.0.10);
+    object-fit: cover;
+    background-color: #fff;
+}
+#singlecard #singlecardinfo{
+    gap: 1rem;
+ }
+#singlecard #singlecardinfo h2{
+        display: inline;
+ }
+ #singlecard #singlecardinfo #ol1,#ol2{
+    font-size: 14px;
+    padding-left: 20px;
+ } 
+#singlecard #singlecardinfo li{
+    margin-bottom: 0.2rem;
+ }
+ 

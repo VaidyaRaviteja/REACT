@@ -1,0 +1,35 @@
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: blueviolet;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+#navbar > #navlinks > h1, h2, h3 {
+    margin-top: 80px; /* Only if headings are at the top of the page */
+}
+#navbar > #navlinks{
+    
+    display: flex;
+    gap: 20px;
+}
+#navbar #navlinks a,
+#navbar #navlinks .navlink {
+    font-size: 20px;
+    gap: 20px;
+    text-decoration: none;
+    color: inherit; 
+}
+@media (max-width:375px){
+    #navbar{
+        width: 100%;
+    }
+    #navbar > #navlinks{
+        display: none;
+    }
+}
