@@ -8,7 +8,7 @@ import { Navbar } from './Components/Navbar/Navbar.jsx'
 import { CartItems } from './Components/Navbar/Navlinks/CartItems/CartItems.jsx'
 import { FavItems } from './Components/Navbar/Navlinks/FavItems/FavItems.jsx'
 import { RecipeSingleCardDetails } from './Components/Navbar/Navlinks/Recipes/RecipeSingleCardDetails.jsx'
-import { UserSingleCardDetails } from './Components/Navbar/Navlinks/Users/USerSingleCardDetails.jsx'
+import { UserSingleCardDetails } from './Components/Navbar/Navlinks/Users/UserSingleCardDetails.jsx'
 
 import './App.css'
 import { ProductSingleCardDetails } from './Components/Navbar/Navlinks/Products/ProductSingleCardDetails.jsx'
