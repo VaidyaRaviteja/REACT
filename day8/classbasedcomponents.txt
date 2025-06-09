@@ -1,0 +1,25 @@
+class based components came into existence in year of 2013 
+with react itself. We need to concentrate on functionality 
+of class components also to learn about functional Components
+working for that we need to know about "STATE" To know about 
+"STATE" then we need to know about "CLASS BASED COMPONENTS".
+By using the "STATE" we can control the whole component 
+data which is available in "CLASS BASED COMPONENTS"
+
+STATE: State is nothing but an object which stores the component data.
+
+
+For Class Based Components we need to extend from "React.Component"
+In Class Based Component we must use constructor with "super()" method and 
+also state with "this" keyword. By using this keyword we can access 
+data of an object or an function 
+
+
+
+
+
+Then later in period of 2018 to 2019 react 18 version came into market where we got functional components in which one of important topic is HOOKS.
+
+Note: In real time we use functional based components
+
+Note: Prepare on Prototype Chaining
