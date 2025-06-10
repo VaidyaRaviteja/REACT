@@ -1,0 +1,8 @@
+# Ignore all node_modules folders anywhere in the project
+**/node_modules/
+
+# Optional - Ignore system or IDE-specific files
+.DS_Store
+Thumbs.db
+.vscode/
+.env
