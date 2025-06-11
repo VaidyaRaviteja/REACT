@@ -1,13 +1,14 @@
 import React from "react"
 import {Link} from 'react-router-dom';
+import './Navbar.css'
 
 class Navbar extends React.Component{
   render(){
     // console.log(React,"react")
     return(
-      <div id="navbar" style={{display:"flex",backgroundColor:"lightblue",width:"100%", alignItems:"center",justifyContent:"space-evenly"}}>
+      <div id="navbar" >
         <h1>Class Components</h1>
-        <div id="navlinks" style={{display:"flex",gap:"30px"}}>
+        <div id="navlinks" >
         <Link to={'Randomcolor'}><button>Random Color</button></Link>
         <Link to={'Randomquote'}><button>Random Quote</button></Link>
         <Link to={'Togglelight'}><button>Toggle Theme</button></Link>
