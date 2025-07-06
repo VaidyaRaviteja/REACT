@@ -1,0 +1,135 @@
+#skills-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#skills #heading h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    font-weight: 700;
+}
+
+#skillnames{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    width: 100%;
+    max-width: 800px;
+    justify-items: center;
+}
+
+#skillnames > div {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#skillnames > div::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: all 0.5s;
+    transform: rotate(45deg);
+    opacity: 0;
+}
+
+#skillnames > div:hover::before {
+    animation: shine 1s ease-in-out;
+}
+
+@keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateX(100%) translateY(100%) rotate(45deg); opacity: 0; }
+}
+
+#skillnames img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+#skillnames > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+#skillnames > div:hover img {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #skills-section {
+        padding: 60px 15px;
+    }
+    
+    #skills #heading h1 {
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+    }
+    
+    #skillnames {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 25px;
+    }
+    
+    #skillnames > div {
+        padding: 20px;
+    }
+    
+    #skillnames img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    #skills-section {
+        padding: 40px 10px;
+    }
+    
+    #skills #heading h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    
+    #skillnames {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        gap: 20px;
+    }
+    
+    #skillnames > div {
+        padding: 15px;
+    }
+    
+    #skillnames img {
+        width: 50px;
+        height: 50px;
+    }
+}

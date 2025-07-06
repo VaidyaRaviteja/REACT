@@ -1,0 +1,126 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+#home {
+    padding-top: 120px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 60px;
+}
+
+#about > #pic {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+#about > #pic > img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solid white;
+}
+
+#about > #pic > img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+#info{
+    flex: 1;
+    max-width: 600px;
+}
+
+#info h1 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#info p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a5568;
+    text-align: justify;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-left: 4px solid #667eea;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        padding: 20px;
+    }
+    
+    #about > #pic > img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #info {
+        max-width: 100%;
+    }
+    
+    #info h1 {
+        font-size: 2rem;
+    }
+    
+    #info p {
+        font-size: 1rem;
+        padding: 20px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    #home {
+        padding-top: 100px;
+    }
+    
+    #about {
+        padding: 15px;
+        gap: 30px;
+    }
+    
+    #about > #pic > img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #info h1 {
+        font-size: 1.8rem;
+    }
+    
+    #info p {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
