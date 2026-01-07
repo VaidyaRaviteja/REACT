@@ -4,35 +4,63 @@
     justify-content: space-between;
     width: 100%;
     align-items: center;
-    box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--nav-bg);
     backdrop-filter: blur(10px);
     box-sizing: border-box;
+    transition: background 0.3s ease;
 }
 
-#navbar #name{
+#navbar #name {
     display: flex;
     font-size: 28px;
     font-weight: 700;
     align-items: center;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: var(--text-primary);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#navbar #options{
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.theme-toggle {
+    background: var(--card-bg);
+    border: 2px solid var(--text-secondary);
+    color: var(--text-primary);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1) rotate(15deg);
+    border-color: #667eea;
+}
+
+#navbar #options {
     display: flex;
     justify-items: center;
     gap: 35px;
 }
 
-#navbar #options span{
+#navbar #options span {
     padding: 12px 20px;
-    color: white;
+    color: var(--text-primary);
     font-weight: 500;
     cursor: pointer;
     border-radius: 25px;
@@ -41,13 +69,13 @@
     overflow: hidden;
 }
 
-#navbar #options span:hover{
-    background: rgba(255,255,255,0.2);
+#navbar #options span:hover {
+    background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-#navbar #options span:active{
+#navbar #options span:active {
     transform: translateY(0);
 }
 
@@ -62,7 +90,7 @@
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: var(--text-primary);
     margin: 3px 0;
     transition: 0.3s;
     border-radius: 2px;
@@ -74,44 +102,44 @@
         padding: 15px 20px;
         flex-wrap: wrap;
     }
-    
+
     #navbar #name {
         font-size: 24px;
     }
-    
+
     #navbar #options {
         display: none;
         width: 100%;
         flex-direction: column;
         gap: 10px;
         margin-top: 20px;
-        background: rgba(255,255,255,0.1);
+        background: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
         padding: 20px;
     }
-    
+
     #navbar #options.active {
         display: flex;
     }
-    
+
     #navbar #options span {
         text-align: center;
         padding: 15px;
         border-radius: 10px;
     }
-    
+
     .hamburger {
         display: flex;
     }
-    
+
     .hamburger.active span:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
-    
+
     .hamburger.active span:nth-child(2) {
         opacity: 0;
     }
-    
+
     .hamburger.active span:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
@@ -121,7 +149,7 @@
     #navbar {
         padding: 10px 15px;
     }
-    
+
     #navbar #name {
         font-size: 20px;
     }

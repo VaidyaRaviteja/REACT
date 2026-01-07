@@ -1,13 +1,13 @@
 import './Navbar.css'
 import { useState } from 'react';
 
-function Navbar(){
+function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const scrollToSection = (sectionId) => {
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({ 
+            element.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
             });
@@ -21,13 +21,13 @@ function Navbar(){
 
     return <div id="navbar">
         <div id='name'>Vaidya Raviteja</div>
-        
+
         <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
             <span></span>
             <span></span>
             <span></span>
         </div>
-        
+
         <div id='options' className={isMenuOpen ? 'active' : ''}>
             <span onClick={() => scrollToSection('home')}>Home</span>
             <span onClick={() => scrollToSection('projects-section')}>My Work</span>

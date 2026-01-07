@@ -31,9 +31,9 @@ function Skills(){
             <div id='sql'>
                 <img src={image5}/>
             </div>
-            {/* <div id='react'>
+            <div id='react'>
                 <img src={image6}/>
-            </div> */}
+            </div>
             <div id='sql'>
                 <img src={image7}/>
             </div>

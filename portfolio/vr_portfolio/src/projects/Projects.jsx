@@ -31,11 +31,19 @@ function Projects(){
                 </div>
                 <div id='p7'>
                     <p>Class Components</p>
-                    <a href='https://classbasedcomponentsexamples-git-main-vaidyaravitejas-projects.vercel.app' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+                    <a href='https://classbasedcompstateexmples.vercel.app/' target='_blank' rel='noopener noreferrer'>Live Demo</a>
                 </div>
                 <div id='p8'>
                     <p>React Dashboard</p>
                     <a href='https://react-ieir-git-main-vaidyaravitejas-projects.vercel.app' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+                </div>
+                 <div id='p9'>
+                    <p>Lumina Tech</p>
+                    <a href='https://vaidyaraviteja.github.io/JavaScript/Luminatech/index.html' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+                </div>
+                <div id='p10'>
+                    <p>AppointPro</p>
+                    <a href='https://appointpro-5a7eb.web.app/' target='_blank' rel='noopener noreferrer'>Live Demo</a>
                 </div>
             </div>
         </div>

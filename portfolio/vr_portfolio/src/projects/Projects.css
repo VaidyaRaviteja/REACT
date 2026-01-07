@@ -1,22 +1,23 @@
 #projects-section {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: var(--bg-gradient);
     min-height: 100vh;
+    transition: background 0.3s ease;
 }
 
 #projects-section h1 {
     text-align: center;
     font-size: 3rem;
-    color: #2d3748;
+    color: var(--text-color);
     margin-bottom: 50px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: var(--accent-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 700;
 }
 
-#projects{
+#projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
@@ -25,38 +26,38 @@
     padding: 20px;
 }
 
-#projects > div{
-    background: white;
+#projects>div {
+    background: var(--card-bg);
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px var(--shadow-color);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--shadow-color);
 }
 
-#projects > div::before {
+#projects>div::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
     transition: left 0.5s;
 }
 
-#projects > div:hover::before {
+#projects>div:hover::before {
     left: 100%;
 }
 
-#projects > div:hover {
+#projects>div:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-#projects > div p {
+#projects>div p {
     font-size: 1.3rem;
     font-weight: 600;
     color: #2d3748;
@@ -64,7 +65,7 @@
     text-align: center;
 }
 
-#projects a{
+#projects a {
     display: inline-block;
     text-decoration: none;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -93,26 +94,26 @@
     #projects-section {
         padding: 60px 15px;
     }
-    
+
     #projects-section h1 {
         font-size: 2.5rem;
         margin-bottom: 40px;
     }
-    
+
     #projects {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 25px;
         padding: 15px;
     }
-    
-    #projects > div {
+
+    #projects>div {
         padding: 25px;
     }
-    
-    #projects > div p {
+
+    #projects>div p {
         font-size: 1.2rem;
     }
-    
+
     #projects a {
         padding: 10px 20px;
         font-size: 0.9rem;
@@ -123,27 +124,27 @@
     #projects-section {
         padding: 40px 10px;
     }
-    
+
     #projects-section h1 {
         font-size: 2rem;
         margin-bottom: 30px;
     }
-    
+
     #projects {
         grid-template-columns: 1fr;
         gap: 20px;
         padding: 10px;
     }
-    
-    #projects > div {
+
+    #projects>div {
         padding: 20px;
     }
-    
-    #projects > div p {
+
+    #projects>div p {
         font-size: 1.1rem;
         margin-bottom: 15px;
     }
-    
+
     #projects a {
         padding: 8px 16px;
         font-size: 0.85rem;
