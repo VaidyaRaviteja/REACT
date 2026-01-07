@@ -36,7 +36,7 @@ function Contact() {
                 </a>
             </div>
             <div className="resume-container">
-                <a href="/Resume.pdf" download className="resume-button">
+                <a href="/raviteja_vaidya_resume.pdf" download="raviteja_vaidya_resume.pdf" className="resume-button">
                     <span className="resume-icon">📄</span> Download Resume
                 </a>
             </div>
